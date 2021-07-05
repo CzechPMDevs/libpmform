@@ -32,9 +32,6 @@ class FormResponse {
         $this->data = $data;
     }
 
-    /**
-     * @return bool
-     */
     public function isValid(): bool {
         return $this->data !== null;
     }

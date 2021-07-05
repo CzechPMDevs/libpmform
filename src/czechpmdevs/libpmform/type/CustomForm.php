@@ -25,7 +25,7 @@ use czechpmdevs\libpmform\Form;
 class CustomForm extends Form {
 
     public function __construct(string $title, bool $ignoreInvalidResponse = false) {
-        parent::__construct(self::FORM_TYPE_CUSTOM, $ignoreInvalidResponse);
+        parent::__construct(Form::FORM_TYPE_CUSTOM, $ignoreInvalidResponse);
 
         $this->data["title"] = $title;
         $this->data["content"] = [];
@@ -34,8 +34,16 @@ class CustomForm extends Form {
     /**
      * Adds text input to the custom form
      */
-    public function addInput(string $text): void {
-        $this->data["content"][] = ["type" => "input", "text" => $text];
+    public function addInput(string $text, ?string $defaultText = null, ?string $placeholder = null): void {
+        $input = ["type" => "input", "text" => $text];
+        if($defaultText !== null) {
+            $input["default"] = $defaultText;
+        }
+        if($placeholder !== null) {
+            $input["placeholder"] = $placeholder;
+        }
+
+        $this->data["content"][] = $input;
     }
 
     /**
@@ -48,24 +56,26 @@ class CustomForm extends Form {
     /**
      * Adds toggle (switch) to the custom form
      */
-    public function addToggle(string $text, ?bool $default = null): void {
-        if($default !== null) {
-            $this->data["content"][] = ["type" => "toggle", "text" => $text, "default" => $default];
-            return;
+    public function addToggle(string $text, ?bool $defaultValue = null): void {
+        $toggle = ["type" => "toggle", "text" => $text];
+        if($defaultValue !== null) {
+            $toggle["default"] = $defaultValue;
         }
-        $this->data["content"][] = ["type" => "toggle", "text" => $text];
+
+        $this->data["content"][] = $toggle;
     }
 
     /**
      * Adds dropdown (menu with options) to the form
      *
-     * @phpstan-var string[] $options
+     * @param string[] $options
      */
-    public function addDropdown(string $text, array $options, ?int $default = null): void {
-        if($default !== null) {
-            $this->data["content"][] = ["type" => "dropdown", "text" => $text, "options" => $options, "default" => $default];
-            return;
+    public function addDropdown(string $text, array $options, ?int $defaultOption = null): void {
+        $dropdown = ["type" => "dropdown", "text" => $text, "options" => $options];
+        if($defaultOption !== null) {
+            $dropdown["default"] = $defaultOption;
         }
-        $this->data["content"][] = ["type" => "dropdown", "text" => $text, "options" => $options];
+
+        $this->data["content"][] = $dropdown;
     }
 }
