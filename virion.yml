@@ -3,7 +3,7 @@ api: 3.0.0
 author: CzechPMDevs
 authors: [VixikHD]
 description: Simple library for creating forms on pocketmine servers
-version: 1.0.0
+version: 1.0.1
 antigen: czechpmdevs\libpmform
 
 php: [7.4, 8.0]
