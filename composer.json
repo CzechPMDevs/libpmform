@@ -12,7 +12,7 @@
   "require": {
     "php": "^7.4 || ^8.0",
     "pocketmine/pocketmine-mp": "dev-master",
-    "phpstan/phpstan": "0.12.82"
+    "phpstan/phpstan": "^0.12.89"
   },
   "autoload": {
     "psr-4": {
