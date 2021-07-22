@@ -22,7 +22,7 @@ namespace czechpmdevs\libpmform;
 
 use Closure;
 use czechpmdevs\libpmform\response\FormResponse;
-use pocketmine\Player;
+use pocketmine\player\Player;
 
 abstract class Form implements \pocketmine\form\Form {
 

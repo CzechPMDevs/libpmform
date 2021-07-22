@@ -1,19 +1,17 @@
 {
   "name": "czechpmdevs/libpmform",
   "description": "Simple form library",
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "license": "Apache-2.0",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "VixikHD"
     }
   ],
   "require": {
-    "php": "^7.4 || ^8.0"
-  },
-  "require-dev": {
-    "pocketmine/pocketmine-mp": "3.18.0",
+    "php": "^7.4 || ^8.0",
+    "pocketmine/pocketmine-mp": "dev-master",
     "phpstan/phpstan": "0.12.82"
   },
   "autoload": {
