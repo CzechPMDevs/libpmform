@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "183d050e7ecafb2a30142faae98e9e2a",
+    "content-hash": "9e222ed6c12410600623b37dd119f986",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -675,22 +675,22 @@
         },
         {
             "name": "pocketmine/pocketmine-mp",
-            "version": "4.0.0-BETA1",
+            "version": "4.0.0-BETA2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmmp/PocketMine-MP.git",
-                "reference": "210b9c7b75fe3183600e85f9f4a24ef125fcb1cf"
+                "reference": "26e3280fea976b4ce634e07685122e1843d99ca0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/210b9c7b75fe3183600e85f9f4a24ef125fcb1cf",
-                "reference": "210b9c7b75fe3183600e85f9f4a24ef125fcb1cf",
+                "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/26e3280fea976b4ce634e07685122e1843d99ca0",
+                "reference": "26e3280fea976b4ce634e07685122e1843d99ca0",
                 "shasum": ""
             },
             "require": {
                 "adhocore/json-comment": "^1.1",
                 "composer-runtime-api": "^2.0",
-                "ext-chunkutils2": "^0.2.0",
+                "ext-chunkutils2": "^0.3.0",
                 "ext-crypto": "^0.3.1",
                 "ext-ctype": "*",
                 "ext-curl": "*",
@@ -758,7 +758,7 @@
             "homepage": "https://pmmp.io",
             "support": {
                 "issues": "https://github.com/pmmp/PocketMine-MP/issues",
-                "source": "https://github.com/pmmp/PocketMine-MP/tree/4.0.0-BETA1"
+                "source": "https://github.com/pmmp/PocketMine-MP/tree/4.0.0-BETA2"
             },
             "funding": [
                 {
@@ -770,7 +770,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2021-09-07T13:19:29+00:00"
+            "time": "2021-09-10T16:18:31+00:00"
         },
         {
             "name": "pocketmine/raklib",
