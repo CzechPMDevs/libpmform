@@ -1,5 +1,5 @@
 name: libpmform
-api: 4.0.0
+api: [4.0.0-beta1]
 author: CzechPMDevs
 authors: [VixikHD]
 description: Simple library for creating forms on pocketmine servers

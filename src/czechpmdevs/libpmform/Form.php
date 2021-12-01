@@ -44,7 +44,7 @@ abstract class Form implements \pocketmine\form\Form {
     }
 
     /**
-     * This cancels handling forms if the response is null (form was closed, button was not pressed)
+     * These cancels handling forms if the response is null (form was closed, button was not pressed)
      */
     public function ignoreInvalidResponse(bool $ignoreInvalidResponse = true): void {
         $this->ignoreInvalidResponse = $ignoreInvalidResponse;
