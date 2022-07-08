@@ -23,7 +23,6 @@ namespace czechpmdevs\libpmform\type;
 use czechpmdevs\libpmform\Form;
 
 class CustomForm extends Form {
-
     public function __construct(string $title, bool $ignoreInvalidResponse = false) {
         parent::__construct(Form::FORM_TYPE_CUSTOM, $ignoreInvalidResponse);
 
