@@ -21,14 +21,9 @@ declare(strict_types=1);
 namespace czechpmdevs\libpmform\response;
 
 class FormResponse {
+    private mixed $data;
 
-    /** @var mixed */
-    private $data;
-
-    /**
-     * @param mixed $data
-     */
-    public function __construct($data) {
+    public function __construct(mixed $data) {
         $this->data = $data;
     }
 
@@ -36,10 +31,7 @@ class FormResponse {
         return $this->data !== null;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getData() {
+    public function getData(): mixed {
         return $this->data;
     }
 }

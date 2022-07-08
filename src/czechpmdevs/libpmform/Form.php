@@ -25,15 +25,14 @@ use czechpmdevs\libpmform\response\FormResponse;
 use pocketmine\player\Player;
 
 abstract class Form implements \pocketmine\form\Form {
-
     public const FORM_TYPE_SIMPLE = "form";
     public const FORM_TYPE_MODAL = "modal";
     public const FORM_TYPE_CUSTOM = "custom_form";
 
-    /** @var mixed[] $data */
+    /** @var mixed[] */
     protected array $data = [];
 
-    /** @var Closure(Player $player, FormResponse $response): void $callback */
+    /** @var Closure(Player $player, FormResponse $response): void */
     protected Closure $callback;
     /** @var bool */
     protected bool $ignoreInvalidResponse;

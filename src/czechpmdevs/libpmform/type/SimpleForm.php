@@ -16,7 +16,6 @@
  * limitations under the License.
  */
 
-
 declare(strict_types=1);
 
 namespace czechpmdevs\libpmform\type;
@@ -24,7 +23,6 @@ namespace czechpmdevs\libpmform\type;
 use czechpmdevs\libpmform\Form;
 
 class SimpleForm extends Form {
-
     public function __construct(string $title, string $content, bool $ignoreInvalidResponse = false) {
         parent::__construct(Form::FORM_TYPE_SIMPLE, $ignoreInvalidResponse);
 
