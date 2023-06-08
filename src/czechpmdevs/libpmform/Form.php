@@ -71,7 +71,7 @@ abstract class Form implements \pocketmine\form\Form {
         $callback($player, $response);
     }
 
-    public function jsonSerialize() {
+    public function jsonSerialize(): mixed {
         return $this->data;
     }
 }

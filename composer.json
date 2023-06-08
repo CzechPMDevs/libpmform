@@ -9,11 +9,11 @@
     }
   ],
   "require": {
-    "php": "^8.0",
-    "pocketmine/pocketmine-mp": "^4.0.0|^5.0.0-ALPHA1"
+    "php": "^8.1",
+    "pocketmine/pocketmine-mp": "^5.0.0"
   },
   "require-dev": {
-    "phpstan/phpstan": "1.8.0"
+    "phpstan/phpstan": "1.10.18"
   },
   "autoload": {
     "psr-4": {
